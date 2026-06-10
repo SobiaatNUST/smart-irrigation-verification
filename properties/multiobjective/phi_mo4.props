@@ -1,0 +1,17 @@
+// ============================================================
+// phi_mo4: water minimisation under violation budget
+// ============================================================
+// Paper notation (eq. 17):
+//   multi( R{"water_usage"}min=? [C<=140],
+//          R{"safety_violations"}<=V [C<=140] )
+//
+// Returns the deterministic policy that minimises expected water
+// under a cap V on expected unsafe ticks (cross-step amortisation
+// of the safety event).
+//
+// Reference planned grid: V in {0.05, 0.5, 1.0}, evaluated across
+// the full 3x3 soil x weather grid at x(0)=40 mm.
+// ============================================================
+
+multi( R{"water_usage"}min=? [C<=140],
+       R{"safety_violations"}<=0.5 [C<=140] )

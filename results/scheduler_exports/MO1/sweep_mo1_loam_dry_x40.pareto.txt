@@ -1,0 +1,27 @@
+[19:20:23] stormpy 1.13.0
+[19:20:23] MO1 weighted-sum sweep
+[19:20:23] reward_a (axis A): water_usage  --  water (mm)
+[19:20:23] reward_b (axis B): unsafe_visits  --  E[unsafe-state visits]
+[19:20:23] target: unsafe_visits == 0.05
+[19:20:23] weight grid (4 points): [(2, 1), (3, 1), (5, 1), (10, 1)]
+[19:20:23] patched temp model -> /Users/alizeeshan/PhD/M3_Policy_Synthesis/M3_Schedulers_MO_Props/sweep_mo1_loam_dry_x40_temp.pm
+[19:20:23] -- weight 1/4: W_A=2, W_B=1
+[19:20:59]     build=36.3s  states=15997570
+[19:21:13]     Rmin[weighted](s0) = 50.7604  check=14.0s  scheduler_det=True
+[19:21:17]     induced DTMC: water_usage=18.1343  unsafe_visits=14.4918  P[F !safe]=0.487059
+[19:21:29]     scheduler -> /Users/alizeeshan/PhD/M3_Policy_Synthesis/M3_Schedulers_MO_Props/Results_Sched_MO1/sweep_mo1_loam_dry_x40_W2_1.scheduler  (15997570 entries)
+[19:21:29] -- weight 2/4: W_A=3, W_B=1
+[19:22:08]     build=39.4s  states=15997570
+[19:22:27]     Rmin[weighted](s0) = 56.8056  check=18.0s  scheduler_det=True
+[19:22:31]     induced DTMC: water_usage=0.466706  unsafe_visits=55.4054  P[F !safe]=0.808299
+[19:22:45]     scheduler -> /Users/alizeeshan/PhD/M3_Policy_Synthesis/M3_Schedulers_MO_Props/Results_Sched_MO1/sweep_mo1_loam_dry_x40_W3_1.scheduler  (15997570 entries)
+[19:22:45] -- weight 3/4: W_A=5, W_B=1
+[19:23:25]     build=39.9s  states=15997570
+[19:23:41]     Rmin[weighted](s0) = 56.9113  check=15.6s  scheduler_det=True
+[19:23:45]     induced DTMC: water_usage=0  unsafe_visits=56.9113  P[F !safe]=0.817673
+[19:23:58]     scheduler -> /Users/alizeeshan/PhD/M3_Policy_Synthesis/M3_Schedulers_MO_Props/Results_Sched_MO1/sweep_mo1_loam_dry_x40_W5_1.scheduler  (15997570 entries)
+[19:23:58] -- weight 4/4: W_A=10, W_B=1
+[19:24:33]     build=35.2s  states=15997570
+[19:24:48]     Rmin[weighted](s0) = 56.9113  check=14.6s  scheduler_det=True
+[19:24:52]     induced DTMC: water_usage=0  unsafe_visits=56.9113  P[F !safe]=0.817673
+[19:25:04]     scheduler -> /Users/alizeeshan/PhD/M3_Policy_Synthesis/M3_Schedulers_MO_Props/Results_Sched_MO1/sweep_mo1_loam_dry_x40_W10_1.scheduler  (15997570 entries)

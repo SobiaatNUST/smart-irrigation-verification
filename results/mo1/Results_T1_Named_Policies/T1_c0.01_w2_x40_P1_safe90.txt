@@ -1,0 +1,32 @@
+Storm 1.12.0
+
+Date: Sat Apr 18 23:14:43 2026
+Command line arguments: --prism /Users/ats/Downloads/M3_MDP_SWEEPA_Min_Water_Safe/T1_c0.01_w2_x40_P1_safe90_temp.pm --prop 'multi(R{"water_usage"}min=? [C<=140], P>=0.90 [G "safe"])' --constants 'c=0.01,w_init=2' --engine sparse --prismcompat --statistics
+Current working directory: /Users/ats/Downloads/M3_MDP_SWEEPA_Min_Water_Safe
+
+Time for model input parsing: 0.004s.
+
+Time for model construction: 33.282s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (sparse)
+States: 	16067728
+Transitions: 	65540585
+Choices: 	33241593
+Reward Models:  water_usage
+State Labels: 	3 labels
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+   * safe -> 11993734 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "1": multi(R{"water_usage"}min=? [C<=140], P>=9/10 [G "safe"]) ...
+Weight Vector Checker Statistics:
+Final preprocessed model has 26239366 states.
+Final preprocessed model has 54497731 actions.
+
+Multi-objective Pareto Curve Approximation algorithm terminated after 7 refinement steps.
+Solving multi-objective query took 7109.390s seconds (consisting of 65.394s seconds for preprocessing and 7043.996s seconds for analyzing the preprocessed model).
+Result (for initial states): 8.178285636
+Time for model checking: 7109.393s.

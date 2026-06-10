@@ -1,0 +1,5 @@
+// MO2 -- literal query from run_sched_export_mo2.sh
+// (UNSUPPORTED by Storm 1.11's scheduler export -- achievability + time-bounded):
+multi( R{"water_usage"}min=? [C<=140], R{"safety_violations"}<=0.5 [C<=140] )
+// Pareto-form actually used (both objectives quantitative, both unbounded):
+multi( R{"water_usage"}min=? [F "horizon_end"], R{"safety_violations"}min=? [F "horizon_end"] )

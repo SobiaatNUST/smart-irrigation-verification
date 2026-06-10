@@ -1,0 +1,10 @@
+tier,scenario,c,w_init,w_name,xinit,theta,query_id,query_desc,property,result_min_water,states,transitions,build_sec,check_sec,wall_sec
+T2,T2_c0.025_w0_x40_theta0p60,0.025,0,Dry,40,0.60,Pareto_theta0p60,"pareto_min_water_Psafe_ge_0.60","multi(R{"water_usage"}min=? [C<=140], P>=0.60 [G "safe"])",13.24601962,15997570,65248372,110.116,14615.972,14727
+T2,T2_c0.025_w0_x40_theta0p65,0.025,0,Dry,40,0.65,Pareto_theta0p65,"pareto_min_water_Psafe_ge_0.65","multi(R{"water_usage"}min=? [C<=140], P>=0.65 [G "safe"])",15.21357059,15997570,65248372,109.842,14621.276,14731
+T2,T2_c0.025_w0_x40_theta0p70,0.025,0,Dry,40,0.70,Pareto_theta0p70,"pareto_min_water_Psafe_ge_0.70","multi(R{"water_usage"}min=? [C<=140], P>=0.70 [G "safe"])",17.20267026,15997570,65248372,109.609,14134.526,14244
+T2,T2_c0.025_w0_x40_theta0p75,0.025,0,Dry,40,0.75,Pareto_theta0p75,"pareto_min_water_Psafe_ge_0.75","multi(R{"water_usage"}min=? [C<=140], P>=0.75 [G "safe"])",19.20183191,15997570,65248372,110.147,14634.145,14745
+T2,T2_c0.025_w0_x40_theta0p80,0.025,0,Dry,40,0.80,Pareto_theta0p80,"pareto_min_water_Psafe_ge_0.80","multi(R{"water_usage"}min=? [C<=140], P>=0.80 [G "safe"])",21.20309671,15997570,65248372,109.834,14128.955,14239
+T2,T2_c0.025_w0_x40_theta0p85,0.025,0,Dry,40,0.85,Pareto_theta0p85,"pareto_min_water_Psafe_ge_0.85","multi(R{"water_usage"}min=? [C<=140], P>=0.85 [G "safe"])",23.21706179,15997570,65248372,108.750,14136.936,14246
+T2,T2_c0.025_w0_x40_theta0p90,0.025,0,Dry,40,0.90,Pareto_theta0p90,"pareto_min_water_Psafe_ge_0.90","multi(R{"water_usage"}min=? [C<=140], P>=0.90 [G "safe"])",25.24273,15997570,65248372,109.503,14137.256,14247
+T2,T2_c0.025_w0_x40_theta0p95,0.025,0,Dry,40,0.95,Pareto_theta0p95,"pareto_min_water_Psafe_ge_0.95","multi(R{"water_usage"}min=? [C<=140], P>=0.95 [G "safe"])",27.26844901,15997570,65248372,110.099,13647.337,13758
+T2,T2_c0.025_w0_x40_theta0p99,0.025,0,Dry,40,0.99,Pareto_theta0p99,"pareto_min_water_Psafe_ge_0.99","multi(R{"water_usage"}min=? [C<=140], P>=0.99 [G "safe"])",29.10135403,15997570,65248372,109.580,15635.413,15745

@@ -1,0 +1,39 @@
+// ========================================================================
+// Properties for M1 Open-Loop Controller V3 (Storm format)
+// Step bound: 5 phases x 28 time steps = 140 transitions
+// ========================================================================
+
+// Water usage bounds
+R{"water_usage"}min=? [ C<=140 ]
+
+R{"water_usage"}max=? [ C<=140 ]
+
+// Safety violations bounds
+R{"safety_violations"}min=? [ C<=140 ]
+
+R{"safety_violations"}max=? [ C<=140 ]
+
+// Moisture deficit bounds
+R{"moisture_deficit"}min=? [ C<=140 ]
+
+R{"moisture_deficit"}max=? [ C<=140 ]
+
+// Water loss bounds
+R{"water_loss"}min=? [ C<=140 ]
+
+R{"water_loss"}max=? [ C<=140 ]
+
+// Violation penalty bounds
+R{"violation_penalty"}min=? [ C<=140 ]
+
+R{"violation_penalty"}max=? [ C<=140 ]
+
+// Probability of reaching critical state
+Pmax=? [ F<=140 "critical" ]
+
+Pmin=? [ F<=140 "critical" ]
+
+// Probability of always remaining safe
+Pmax=? [ G<=140 "safe" ]
+
+Pmin=? [ G<=140 "safe" ]

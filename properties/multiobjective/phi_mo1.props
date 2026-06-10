@@ -1,0 +1,17 @@
+// ============================================================
+// phi_mo1: water minimisation under safety guarantee
+// ============================================================
+// Paper notation (eq. 14):
+//   multi( R{"water_usage"}min=? [C<=140],
+//          P>=theta [G<=140 "safe"] )
+//
+// Returns sigma*_theta : the minimum-water deterministic policy
+// that certifies P(safe) >= theta over the 140-step horizon.
+//
+// theta is supplied at run time via Storm's --prop substitution
+// or by editing the explicit literal in this file.
+// Reference reported values: theta in {0.90, 0.95}.
+// ============================================================
+
+multi( R{"water_usage"}min=? [C<=140],
+       P>=0.95 [G<=140 "safe"] )

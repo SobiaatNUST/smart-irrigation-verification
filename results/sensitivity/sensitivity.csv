@@ -1,0 +1,10 @@
+tier,scenario,c,w_init,w_name,xinit,query_id,query_desc,property,result,states,transitions,build_sec,check_sec,wall_sec
+T3,T3_c0.01_w0_x30_P2_safe95_sens,0.01,0,Dry,30,P2_safe95_sens,"sensitivity_min_water_Psafe_ge_0.95_xinit30","multi(R{"water_usage"}min=? [C<=140], P>=0.95 [G "safe"])",34.28788841,16177522,66012311,110.952,13728.569,13840
+T3,T3_c0.01_w1_x30_P2_safe95_sens,0.01,1,Moderate,30,P2_safe95_sens,"sensitivity_min_water_Psafe_ge_0.95_xinit30","multi(R{"water_usage"}min=? [C<=140], P>=0.95 [G "safe"])",26.52274752,16156632,65924075,111.295,15469.060,15581
+T3,T3_c0.01_w2_x30_P2_safe95_sens,0.01,2,Wet,30,P2_safe95_sens,"sensitivity_min_water_Psafe_ge_0.95_xinit30","multi(R{"water_usage"}min=? [C<=140], P>=0.95 [G "safe"])",15.49294556,16247461,66290354,111.346,14692.816,14804
+T3,T3_c0.025_w0_x30_P2_safe95_sens,0.025,0,Dry,30,P2_safe95_sens,"sensitivity_min_water_Psafe_ge_0.95_xinit30","multi(R{"water_usage"}min=? [C<=140], P>=0.95 [G "safe"])",36.67153214,16129851,65810587,111.659,13655.868,13768
+T3,T3_c0.025_w1_x30_P2_safe95_sens,0.025,1,Moderate,30,P2_safe95_sens,"sensitivity_min_water_Psafe_ge_0.95_xinit30","multi(R{"water_usage"}min=? [C<=140], P>=0.95 [G "safe"])",29.21076459,16108961,65722351,110.931,14649.231,14761
+T3,T3_c0.025_w2_x30_P2_safe95_sens,0.025,2,Wet,30,P2_safe95_sens,"sensitivity_min_water_Psafe_ge_0.95_xinit30","multi(R{"water_usage"}min=? [C<=140], P>=0.95 [G "safe"])",18.73087752,16205929,66115129,110.848,14591.444,14702
+T3,T3_c0.05_w0_x30_P2_safe95_sens,0.05,0,Dry,30,P2_safe95_sens,"sensitivity_min_water_Psafe_ge_0.95_xinit30","multi(R{"water_usage"}min=? [C<=140], P>=0.95 [G "safe"])",52.93358415,16083014,65604454,109.720,13607.130,13717
+T3,T3_c0.05_w1_x30_P2_safe95_sens,0.05,1,Moderate,30,P2_safe95_sens,"sensitivity_min_water_Psafe_ge_0.95_xinit30","multi(R{"water_usage"}min=? [C<=140], P>=0.95 [G "safe"])",44.78859437,16064689,65529085,109.876,14602.411,14712
+T3,T3_c0.05_w2_x30_P2_safe95_sens,0.05,2,Wet,30,P2_safe95_sens,"sensitivity_min_water_Psafe_ge_0.95_xinit30","multi(R{"water_usage"}min=? [C<=140], P>=0.95 [G "safe"])",32.8899109,16175630,65985634,110.742,16062.616,16174

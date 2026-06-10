@@ -1,0 +1,27 @@
+[21:30:50] stormpy 1.13.0
+[21:30:50] model:   /Users/alizeeshan/PhD/M3_Policy_Synthesis/M3_MDP_Synthesis_V3.pm
+[21:30:50] xinit:   40
+[21:30:50] theta:   0.95 (unsafe budget = 0.05)
+[21:30:50] delta:   0.0 (per-action safety Q-value cap)
+[21:30:50] patched model -> /Users/alizeeshan/PhD/M3_Policy_Synthesis/g3_loam_dry_x40_safe95_temp.pm
+[21:30:50] building sparse MDP...
+[21:31:35]   states=15997570 transitions=65248372 choices=33065200  build=44.5s
+[21:31:35] step 1: Pmin=? [F !"safe"]
+[21:31:37]   v_safe(s0) = 0  min=0  max=1  #(v_safe=0)=11777387  wall=2.1s
+[21:31:37] step 2: computing Q_safe per action row...
+[21:38:28]   Q_safe: n=33065200  min=0  max=1  #(Q_safe<=0)=24631272  wall=411.2s
+[21:38:38]   states with no surviving action (fixed via deadlock self-loop): 4064611
+[21:38:38] step 3: building sub-MDP...
+[21:39:05]   sub-MDP: states=15997570 transitions=52130443 choices=28695883  wall=26.9s
+[21:39:05] step 4: R{"water_usage"}min=? [F "horizon_end"]  on sub-MDP
+[21:39:18]   Rmin water on sub-MDP(s0) = 30.2362  wall=13.3s
+[21:39:19]   scheduler: deterministic=True memoryless=True partial=False
+[21:39:19] step 5: writing scheduler + state valuations (sub-MDP indexing)...
+[21:39:36]   scheduler -> /Users/alizeeshan/PhD/M3_Policy_Synthesis/Results_G3_Scheduler/g3_loam_dry_x40_safe95.scheduler  (15997570 det, 0 rand)
+[21:40:05]   state valuations -> /Users/alizeeshan/PhD/M3_Policy_Synthesis/Results_G3_Scheduler/g3_loam_dry_x40_safe95.states
+[21:40:05] step 6: induced DTMC verification...
+[21:40:08]   induced: states=1827918 transitions=5347210
+[21:40:08]   P[F !safe]: 0
+[21:40:08]   P[F<=140 !safe]: 0
+[21:40:09]   water_usage: 30.2362
+[21:40:09]   verify wall: 3.6s

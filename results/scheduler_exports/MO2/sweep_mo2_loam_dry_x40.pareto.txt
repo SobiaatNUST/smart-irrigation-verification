@@ -1,0 +1,22 @@
+[18:07:13] stormpy 1.13.0
+[18:07:13] MO2 weighted-sum sweep
+[18:07:13] reward_a (axis A): water_usage  --  water (mm)
+[18:07:13] reward_b (axis B): safety_violations  --  E[violations]
+[18:07:13] target: violations == 0.5
+[18:07:13] weight grid (3 points): [(1, 2), (1, 3), (1, 4)]
+[18:07:13] patched temp model -> /Users/alizeeshan/PhD/M3_Policy_Synthesis/M3_Schedulers_MO_Props/sweep_mo2_loam_dry_x40_temp.pm
+[18:07:13] -- weight 1/3: W_A=1, W_B=2
+[18:07:51]     build=37.5s  states=15997570
+[18:08:10]     Rmin[weighted](s0) = 22.413  check=18.7s  scheduler_det=True
+[18:08:14]     induced DTMC: water_usage=2.70886  safety_violations=9.85207  P[F !safe]=0.772015
+[18:08:27]     scheduler -> /Users/alizeeshan/PhD/M3_Policy_Synthesis/M3_Schedulers_MO_Props/Results_Sched_MO2/sweep_mo2_loam_dry_x40_W1_2.scheduler  (15997570 entries)
+[18:08:27] -- weight 2/3: W_A=1, W_B=3
+[18:09:09]     build=41.6s  states=15997570
+[18:09:26]     Rmin[weighted](s0) = 26.3597  check=16.6s  scheduler_det=True
+[18:09:30]     induced DTMC: water_usage=22.5468  safety_violations=1.27099  P[F !safe]=0.381034
+[18:09:43]     scheduler -> /Users/alizeeshan/PhD/M3_Policy_Synthesis/M3_Schedulers_MO_Props/Results_Sched_MO2/sweep_mo2_loam_dry_x40_W1_3.scheduler  (15997570 entries)
+[18:09:43] -- weight 3/3: W_A=1, W_B=4
+[18:10:22]     build=38.7s  states=15997570
+[18:10:37]     Rmin[weighted](s0) = 27.1217  check=14.5s  scheduler_det=True
+[18:10:41]     induced DTMC: water_usage=25.3327  safety_violations=0.447247  P[F !safe]=0.298953
+[18:10:54]     scheduler -> /Users/alizeeshan/PhD/M3_Policy_Synthesis/M3_Schedulers_MO_Props/Results_Sched_MO2/sweep_mo2_loam_dry_x40_W1_4.scheduler  (15997570 entries)

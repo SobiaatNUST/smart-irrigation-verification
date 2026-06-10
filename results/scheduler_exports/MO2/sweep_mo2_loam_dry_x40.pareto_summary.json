@@ -1,0 +1,37 @@
+{
+  "mo": 2,
+  "scenario": "sweep_mo2_loam_dry_x40",
+  "stormpy_version": "1.13.0",
+  "xinit": 40,
+  "config": {
+    "reward_a": "water_usage",
+    "reward_b": "safety_violations",
+    "target_axis": "violations",
+    "target": 0.5
+  },
+  "note": "Pareto curve via weighted-sum scalarisation. Storm's native multi() refuses scheduler export for [C<=N]-bounded MO objectives in any released Storm version; this sweep is the same algorithm Storm runs internally (PCAA = weighted-sum iteration), implemented manually in Python. R{}min=? [F \"horizon_end\"] is numerically equivalent to [C<=140] on this model (t reaches Tmax in 140 transitions deterministically).",
+  "weighted_property": "R{\"weighted_cost\"}min=? [F \"horizon_end\"]  where  weighted_cost = W_A * (step=4 & t<Tmax) * u  +  W_B * (step=4 & t<Tmax & x<xmin)",
+  "pareto_points": [
+    {"w_a": 1, "w_b": 0,     "value_water_usage":  0.0,       "value_safety_violations": 11.382284,  "p_unsafe": 0.817673, "scheduler_file": "sweep_mo2_loam_dry_x40_W1_0.scheduler"},
+    {"w_a": 1, "w_b": 1,     "value_water_usage":  0.0,       "value_safety_violations": 11.382284,  "p_unsafe": 0.817673, "scheduler_file": "sweep_mo2_loam_dry_x40_W1_1.scheduler"},
+    {"w_a": 1, "w_b": 2,     "value_water_usage":  2.708863,  "value_safety_violations":  9.852073,  "p_unsafe": 0.772015, "scheduler_file": "sweep_mo2_loam_dry_x40_W1_2.scheduler"},
+    {"w_a": 1, "w_b": 3,     "value_water_usage": 22.546773,  "value_safety_violations":  1.270991,  "p_unsafe": 0.381034, "scheduler_file": "sweep_mo2_loam_dry_x40_W1_3.scheduler"},
+    {"w_a": 1, "w_b": 4,     "value_water_usage": 25.332663,  "value_safety_violations":  0.447247,  "p_unsafe": 0.298953, "scheduler_file": "sweep_mo2_loam_dry_x40_W1_4.scheduler"},
+    {"w_a": 1, "w_b": 5,     "value_water_usage": 26.313053,  "value_safety_violations":  0.221808,  "p_unsafe": 0.263836, "scheduler_file": "sweep_mo2_loam_dry_x40_W1_5.scheduler"},
+    {"w_a": 1, "w_b": 10,    "value_water_usage": 27.290000,  "value_safety_violations":  0.068249,  "p_unsafe": 0.179793, "scheduler_file": "sweep_mo2_loam_dry_x40_W1_10.scheduler"},
+    {"w_a": 1, "w_b": 50,    "value_water_usage": 28.600700,  "value_safety_violations":  0.008036,  "p_unsafe": 0.110563, "scheduler_file": "sweep_mo2_loam_dry_x40_W1_50.scheduler"},
+    {"w_a": 1, "w_b": 100,   "value_water_usage": 28.811600,  "value_safety_violations":  0.004524,  "p_unsafe": 0.101285, "scheduler_file": "sweep_mo2_loam_dry_x40_W1_100.scheduler"},
+    {"w_a": 1, "w_b": 500,   "value_water_usage": 29.547678,  "value_safety_violations":  0.0,       "p_unsafe": 0.091385, "scheduler_file": "sweep_mo2_loam_dry_x40_W1_500.scheduler"},
+    {"w_a": 1, "w_b": 1000,  "value_water_usage": 29.547678,  "value_safety_violations":  0.0,       "p_unsafe": 0.091385, "scheduler_file": "sweep_mo2_loam_dry_x40_W1_1000.scheduler"},
+    {"w_a": 1, "w_b": 10000, "value_water_usage": 29.547678,  "value_safety_violations":  0.0,       "p_unsafe": 0.091385, "scheduler_file": "sweep_mo2_loam_dry_x40_W1_10000.scheduler"}
+  ],
+  "headline_point_for_target": {
+    "comment": "Pareto-optimal deterministic point nearest E[violations] = 0.5 (slightly below: 0.447 vs target 0.5)",
+    "w_a": 1,
+    "w_b": 4,
+    "water_mm": 25.332663,
+    "E_violations": 0.447247,
+    "p_unsafe": 0.298953,
+    "scheduler_file": "sweep_mo2_loam_dry_x40_W1_4.scheduler"
+  }
+}

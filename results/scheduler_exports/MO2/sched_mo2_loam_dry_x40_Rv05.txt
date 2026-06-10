@@ -1,0 +1,28 @@
+Storm 1.13.0
+
+Date: Thu May 21 19:08:15 2026
+Command line arguments: --prism /work/model.pm --prop /work/mo.props --constants 'c=0.025,w_init=0' --engine sparse --prismcompat --statistics '--multiobjective:printres' '--multiobjective:exportplot' /work/plot '--multiobjective:precision' 1e-3 '--multiobjective:maxsteps' 100 --exportscheduler /work/sched.sched --exportresult /work/result.json
+Current working directory: /opt
+
+Time for model input parsing: 0.014s.
+
+Time for model construction: 42.196s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (sparse)
+States: 	15997570
+Transitions: 	65248372
+Choices: 	33065200
+Reward Models:  water_usage, safety_violations
+State Labels: 	3 labels
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+   * horizon_end -> 101104 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "1": multi(R{"water_usage"}min=? [F "horizon_end"], R{"safety_violations"}min=? [F "horizon_end"]) ...
+Weight Vector Checker Statistics:
+Final preprocessed model has 15848897 states.
+Final preprocessed model has 32916527 actions.
+

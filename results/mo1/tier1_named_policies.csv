@@ -1,0 +1,28 @@
+tier,scenario,c,w_init,w_name,xinit,query_id,query_desc,property,result,states,transitions,build_sec,check_sec,wall_sec
+T1,T1_c0.01_w0_x40_P1_safe90,0.01,0,Dry,40,P1_safe90,"min_water_Psafe_ge_0.90","multi(R{"water_usage"}min=? [C<=140],22.85416339,16038639,65421530,27.368,11100.187,11128
+T1,T1_c0.01_w0_x40_P2_safe95,0.01,0,Dry,40,P2_safe95,"min_water_Psafe_ge_0.95","multi(R{"water_usage"}min=? [C<=140],24.78077645,16038639,65421530,27.215,10292.030,10320
+T1,T1_c0.01_w0_x40_P3_maxsafe_w40,0.01,0,Dry,40,P3_maxsafe_w40,"max_Psafe_water_le_40","multi(Pmax=? [G "safe"],0.99995,16038639,65421530,26.892,4669.909,4697
+T1,T1_c0.01_w1_x40_P1_safe90,0.01,1,Moderate,40,P1_safe90,"min_water_Psafe_ge_0.90","multi(R{"water_usage"}min=? [C<=140],15.96782328,16009657,65300654,27.093,11055.524,11083
+T1,T1_c0.01_w1_x40_P2_safe95,0.01,1,Moderate,40,P2_safe95,"min_water_Psafe_ge_0.95","multi(R{"water_usage"}min=? [C<=140],17.88114391,16009657,65300654,33.397,6949.811,6984
+T1,T1_c0.01_w1_x40_P3_maxsafe_w40,0.01,1,Moderate,40,P3_maxsafe_w40,"max_Psafe_water_le_40","multi(Pmax=? [G "safe"],0.99995,16009657,65300654,34.423,3554.806,3590
+T1,T1_c0.01_w2_x40_P1_safe90,0.01,2,Wet,40,P1_safe90,"min_water_Psafe_ge_0.90","multi(R{"water_usage"}min=? [C<=140],8.178285636,16067728,65540585,33.282,7109.393,7143
+T1,T1_c0.01_w2_x40_P2_safe95,0.01,2,Wet,40,P2_safe95,"min_water_Psafe_ge_0.95","multi(R{"water_usage"}min=? [C<=140],10.0053685,16067728,65540585,30.691,7866.634,7898
+T1,T1_c0.01_w2_x40_P3_maxsafe_w40,0.01,2,Wet,40,P3_maxsafe_w40,"max_Psafe_water_le_40","multi(Pmax=? [G "safe"],0.99995,16067728,65540585,27.287,4763.778,4792
+T1,T1_c0.025_w0_x40_P1_safe90,0.025,0,Dry,40,P1_safe90,"min_water_Psafe_ge_0.90","multi(R{"water_usage"}min=? [C<=140],25.24277697,15997570,65248372,23.431,5621.384,5645
+T1,T1_c0.025_w0_x40_P2_safe95,0.025,0,Dry,40,P2_safe95,"min_water_Psafe_ge_0.95","multi(R{"water_usage"}min=? [C<=140],27.26846515,15997570,65248372,28.854,4112.919,4142
+T1,T1_c0.025_w0_x40_P3_maxsafe_w40,0.025,0,Dry,40,P3_maxsafe_w40,"max_Psafe_water_le_40","multi(Pmax=? [G "safe"],0.99995,15997570,65248372,29.926,3420.213,3451
+T1,T1_c0.025_w1_x40_P1_safe90,0.025,1,Moderate,40,P1_safe90,"min_water_Psafe_ge_0.90","multi(R{"water_usage"}min=? [C<=140],18.87753283,15968588,65127496,26.107,6485.832,6512
+T1,T1_c0.025_w1_x40_P2_safe95,0.025,1,Moderate,40,P2_safe95,"min_water_Psafe_ge_0.95","multi(R{"water_usage"}min=? [C<=140],20.89122947,15968588,65127496,24.906,7229.831,7255
+T1,T1_c0.025_w1_x40_P3_maxsafe_w40,0.025,1,Moderate,40,P3_maxsafe_w40,"max_Psafe_water_le_40","multi(Pmax=? [G "safe"],0.99995,15968588,65127496,25.196,4914.643,4940
+T1,T1_c0.025_w2_x40_P1_safe90,0.025,2,Wet,40,P1_safe90,"min_water_Psafe_ge_0.90","multi(R{"water_usage"}min=? [C<=140],11.97816021,16031296,65382856,24.563,5844.525,5869
+T1,T1_c0.025_w2_x40_P2_safe95,0.025,2,Wet,40,P2_safe95,"min_water_Psafe_ge_0.95","multi(R{"water_usage"}min=? [C<=140],13.90123416,16031296,65382856,32.741,4683.636,4717
+T1,T1_c0.025_w2_x40_P3_maxsafe_w40,0.025,2,Wet,40,P3_maxsafe_w40,"max_Psafe_water_le_40","multi(Pmax=? [G "safe"],0.99995,16031296,65382856,31.476,3800.525,3832
+T1,T1_c0.05_w0_x40_P1_safe90,0.05,0,Dry,40,P1_safe90,"min_water_Psafe_ge_0.90","multi(R{"water_usage"}min=? [C<=140],40.45396029,16006509,65283313,27.090,5303.652,5331
+T1,T1_c0.05_w0_x40_P2_safe95,0.05,0,Dry,40,P2_safe95,"min_water_Psafe_ge_0.95","multi(R{"water_usage"}min=? [C<=140],43.30128896,16006509,65283313,25.489,5040.404,5066
+T1,T1_c0.05_w0_x40_P3_maxsafe_w40,0.05,0,Dry,40,P3_maxsafe_w40,"max_Psafe_water_le_40","multi(Pmax=? [G "safe"],0.8919692292,16006509,65283313,25.734,4317.336,4343
+T1,T1_c0.05_w1_x40_P1_safe90,0.05,1,Moderate,40,P1_safe90,"min_water_Psafe_ge_0.90","multi(R{"water_usage"}min=? [C<=140],32.91567761,15979049,65167957,24.187,4446.576,4471
+T1,T1_c0.05_w1_x40_P2_safe95,0.05,1,Moderate,40,P2_safe95,"min_water_Psafe_ge_0.95","multi(R{"water_usage"}min=? [C<=140],35.74990819,15979049,65167957,26.167,5194.013,5221
+T1,T1_c0.05_w1_x40_P3_maxsafe_w40,0.05,1,Moderate,40,P3_maxsafe_w40,"max_Psafe_water_le_40","multi(Pmax=? [G "safe"],0.99995,15979049,65167957,26.762,4020.995,4048
+T1,T1_c0.05_w2_x40_P1_safe90,0.05,2,Wet,40,P1_safe90,"min_water_Psafe_ge_0.90","multi(R{"water_usage"}min=? [C<=140],24.4155365,16042065,65420548,25.949,5478.515,5505
+T1,T1_c0.05_w2_x40_P2_safe95,0.05,2,Wet,40,P2_safe95,"min_water_Psafe_ge_0.95","multi(R{"water_usage"}min=? [C<=140],27.13690201,16042065,65420548,24.878,5466.335,5491
+T1,T1_c0.05_w2_x40_P3_maxsafe_w40,0.05,2,Wet,40,P3_maxsafe_w40,"max_Psafe_water_le_40","multi(Pmax=? [G "safe"],0.99995,16042065,65420548,24.831,3627.305,3652

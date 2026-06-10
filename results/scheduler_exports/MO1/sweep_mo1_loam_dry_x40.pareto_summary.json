@@ -1,0 +1,47 @@
+{
+  "mo": 1,
+  "scenario": "sweep_mo1_loam_dry_x40",
+  "stormpy_version": "1.13.0",
+  "xinit": 40,
+  "config": {
+    "reward_a": "water_usage",
+    "reward_b": "unsafe_visits",
+    "target_axis": "unsafe_visits",
+    "target": 0.05,
+    "user_target": "P[F !safe] <= 0.05  (i.e. P_safe >= 0.95)"
+  },
+  "note": "Pareto curve via weighted-sum scalarisation. The scalar axis B is the *state-reward* unsafe_visits (`x<xmin : 1`), an upper bound on P[F !safe]. The TRUE safety probability under each extracted scheduler is reported in p_unsafe, computed on the induced DTMC. The deterministic Pareto frontier of (water, P[F !safe]) saturates at P_unsafe ~= 0.0914 -- it does NOT reach the 0.05 target. For the headline P_safe>=0.95 deterministic policy see run_safety_scheduler_cmdp_G3.py (CMDP, water=30.236 mm, P_unsafe=0).",
+  "weighted_property": "R{\"weighted_cost\"}min=? [F \"horizon_end\"]  where  weighted_cost = W_A * (step=4 & t<Tmax) * u  +  W_B * 1[x<xmin]",
+  "pareto_points": [
+    {"w_a": 1,  "w_b": 0,     "value_water_usage":  0.000,    "value_unsafe_visits": 56.911,  "p_unsafe": 0.817673, "scheduler_file": "sweep_mo1_loam_dry_x40_W1_0.scheduler"},
+    {"w_a": 5,  "w_b": 1,     "value_water_usage":  0.000,    "value_unsafe_visits": 56.911,  "p_unsafe": 0.817673, "scheduler_file": "sweep_mo1_loam_dry_x40_W5_1.scheduler"},
+    {"w_a": 10, "w_b": 1,     "value_water_usage":  0.000,    "value_unsafe_visits": 56.911,  "p_unsafe": 0.817673, "scheduler_file": "sweep_mo1_loam_dry_x40_W10_1.scheduler"},
+    {"w_a": 3,  "w_b": 1,     "value_water_usage":  0.467,    "value_unsafe_visits": 55.405,  "p_unsafe": 0.808299, "scheduler_file": "sweep_mo1_loam_dry_x40_W3_1.scheduler"},
+    {"w_a": 2,  "w_b": 1,     "value_water_usage": 18.134,    "value_unsafe_visits": 14.492,  "p_unsafe": 0.487059, "scheduler_file": "sweep_mo1_loam_dry_x40_W2_1.scheduler"},
+    {"w_a": 1,  "w_b": 1,     "value_water_usage": 26.313,    "value_unsafe_visits":  1.109,  "p_unsafe": 0.263836, "scheduler_file": "sweep_mo1_loam_dry_x40_W1_1.scheduler"},
+    {"w_a": 1,  "w_b": 5,     "value_water_usage": 27.818,    "value_unsafe_visits":  0.152,  "p_unsafe": 0.142639, "scheduler_file": "sweep_mo1_loam_dry_x40_W1_5.scheduler"},
+    {"w_a": 1,  "w_b": 10,    "value_water_usage": 28.601,    "value_unsafe_visits":  0.040,  "p_unsafe": 0.110563, "scheduler_file": "sweep_mo1_loam_dry_x40_W1_10.scheduler"},
+    {"w_a": 1,  "w_b": 50,    "value_water_usage": 29.473,    "value_unsafe_visits":  0.001,  "p_unsafe": 0.095563, "scheduler_file": "sweep_mo1_loam_dry_x40_W1_50.scheduler"},
+    {"w_a": 1,  "w_b": 100,   "value_water_usage": 29.548,    "value_unsafe_visits":  0.000,  "p_unsafe": 0.091385, "scheduler_file": "sweep_mo1_loam_dry_x40_W1_100.scheduler"},
+    {"w_a": 1,  "w_b": 500,   "value_water_usage": 29.548,    "value_unsafe_visits":  0.000,  "p_unsafe": 0.091385, "scheduler_file": "sweep_mo1_loam_dry_x40_W1_500.scheduler"},
+    {"w_a": 1,  "w_b": 1000,  "value_water_usage": 29.548,    "value_unsafe_visits":  0.000,  "p_unsafe": 0.091385, "scheduler_file": "sweep_mo1_loam_dry_x40_W1_1000.scheduler"},
+    {"w_a": 1,  "w_b": 10000, "value_water_usage": 29.548,    "value_unsafe_visits":  0.000,  "p_unsafe": 0.091385, "scheduler_file": "sweep_mo1_loam_dry_x40_W1_10000.scheduler"}
+  ],
+  "headline_point_for_MO1_target": {
+    "comment": "MO1 target P_safe >= 0.95 (P[F !safe] <= 0.05) is NOT achievable on the deterministic Pareto frontier via weighted-sum scalarisation -- saturates at p_unsafe = 0.0914. Closest achievable: w=1:50 at p_unsafe = 0.0956. For the formal P_safe = 1.0 deterministic policy use the CMDP scheduler in Results_G3_Scheduler/.",
+    "closest_sweep_w_a": 1,
+    "closest_sweep_w_b": 50,
+    "closest_sweep_water_mm": 29.473,
+    "closest_sweep_p_unsafe": 0.0956,
+    "headline_recommended": "Use CMDP scheduler (Results_G3_Scheduler/g3_loam_dry_x40_safe95.scheduler) with water=30.236, P_unsafe=0."
+  },
+  "headline_point_for_MO3_target": {
+    "comment": "MO3 target water <= 20. Closest deterministic Pareto point.",
+    "w_a": 2,
+    "w_b": 1,
+    "water_mm": 18.134,
+    "E_unsafe_visits": 14.492,
+    "p_unsafe": 0.487,
+    "scheduler_file": "sweep_mo1_loam_dry_x40_W2_1.scheduler"
+  }
+}

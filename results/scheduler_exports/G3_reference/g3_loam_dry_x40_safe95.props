@@ -1,0 +1,8 @@
+// phase 1: per-state min unsafe prob (for pruning)
+Pmin=? [F !"safe"]
+// phase 2: min water on safety-pruned sub-MDP
+R{"water_usage"}min=? [F "horizon_end"]
+// verify on induced DTMC:
+P=? [F !"safe"]
+P=? [F<=140 !"safe"]
+R{"water_usage"}=? [F "horizon_end"]

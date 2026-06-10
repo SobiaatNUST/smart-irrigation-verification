@@ -1,0 +1,9 @@
+[01:58:20] stormpy 1.13.0
+[01:58:20] model: /Users/alizeeshan/PhD/M3_Policy_Synthesis/M3_MDP_Synthesis_V3.pm  xinit=40  theta=0.95
+[01:58:20] patched temp model -> /Users/alizeeshan/PhD/M3_Policy_Synthesis/g3_loam_dry_x40_safe95_mo_temp.pm
+[01:58:20] property: multi( R{"water_usage"}min=? [C<=140], P<=0.05 [F<=140 !"safe"] )
+[01:58:20] building sparse MDP...
+[01:58:54]   states=15997570 transitions=65248372 choices=33065200  build=33.9s
+[01:58:54] running multi-objective check (this takes ~80 min on this MDP)...
+[03:11:38] MO Pareto-optimal water (s0) = 27.268465148691032  check_wall=4364.1s
+Total wall: 4398.0s

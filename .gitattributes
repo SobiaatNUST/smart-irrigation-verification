@@ -1,0 +1,14 @@
+# Keep shell scripts and text artefacts LF so they run on Linux/macOS
+*.sh        text eol=lf
+*.py        text eol=lf
+*.pm        text eol=lf
+*.props     text eol=lf
+*.pctl      text eol=lf
+*.csv       text eol=lf
+*.md        text eol=lf
+*.cff       text eol=lf
+*.txt       text eol=lf
+
+# Binary artefacts — never normalize
+*.pdf       binary
+*.zip       binary

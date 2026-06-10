@@ -1,0 +1,30 @@
+{
+  "stormpy_version": "1.13.0",
+  "xinit": 40,
+  "theta": 0.95,
+  "delta": 0.0,
+  "model": {
+    "nr_states": 15997570,
+    "nr_choices": 33065200,
+    "initial_state": 0
+  },
+  "submodel": {
+    "nr_states": 15997570,
+    "nr_choices": 28695883,
+    "initial_state": 0,
+    "states_with_no_action_after_prune": 4064611
+  },
+  "v_safe_initial": 0.0,
+  "min_water_on_submodel": 30.23615448545071,
+  "verify": {
+    "P_F_unsafe": 0.0,
+    "P_F140_unsafe": 0.0,
+    "water_usage_mm": 30.23615448545071,
+    "satisfies_target": true
+  },
+  "scheduler_entries": {
+    "det": 15997570,
+    "rand": 0
+  },
+  "total_wall_seconds": 558.4232451915741
+}

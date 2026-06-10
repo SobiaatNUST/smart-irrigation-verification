@@ -1,0 +1,16 @@
+# Python requirements for the SIS reproducibility artefact.
+#
+# The analysis/parsing utilities use the Python STANDARD LIBRARY ONLY.
+# There are no third-party Python dependencies to install.
+#
+#   - analysis/analysis_scripts/analyze_mo3_grid.py   (csv, pathlib)
+#   - scripts/utilities/parse_storm_output.py         (csv, argparse, re)
+#
+# Tested with Python >= 3.10.
+#
+# External (non-Python) tools required to (re)run experiments:
+#   - Storm  >= 1.9  (reference: 1.13.0), built with multi-objective support, sparse engine
+#   - PRISM  4.8.x   (optional, cross-checking only)
+#   - bash   >= 4.0
+#
+# (Intentionally no pinned PyPI packages.)

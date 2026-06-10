@@ -1,0 +1,23 @@
+{
+  "stormpy_version": "1.13.0",
+  "property": "multi( R{\"water_usage\"}min=? [C<=140], P<=0.05 [F<=140 !\"safe\"] )",
+  "xinit": 40,
+  "theta": 0.95,
+  "constants": {
+    "c": "0.025",
+    "w_init": "0"
+  },
+  "model": {
+    "nr_states": 15997570,
+    "nr_transitions": 65248372,
+    "nr_choices": 33065200,
+    "initial_state": 0
+  },
+  "mo_precision": 0.0001,
+  "mo_maxsteps": 10000,
+  "result_value": 27.268465148691032,
+  "build_wall_seconds": 33.88830518722534,
+  "mo_check_wall_seconds": 4364.086736917496,
+  "total_wall_seconds": 4398.015191078186,
+  "note": "Pareto-optimal MO value only. Storm 1.13's MO checker does NOT expose a scheduler for this query; see SESSION_LOG.txt sections 4-7 for details. For an exportable deterministic policy, see run_safety_scheduler_cmdp_G3.py (water=30.236 mm at P_unsafe=0)."
+}

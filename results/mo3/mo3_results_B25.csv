@@ -1,0 +1,10 @@
+tier,scenario,c,w_init,w_name,xinit,Rw_cap,property,result_viol_min,states,transitions,build_sec,check_sec,wall_sec
+phi_mo4,mo4_c0.01_w0_x40_Rw25,0.01,0,Dry,40,25,"multi(R{"safety_violations"}min=? [C<=140], R{"water_usage"}<=25 [C<=140])",0.07224073323,16038639,65421530,111.400,6582.598,6695
+phi_mo4,mo4_c0.01_w1_x40_Rw25,0.01,1,Moderate,40,25,"multi(R{"safety_violations"}min=? [C<=140], R{"water_usage"}<=25 [C<=140])",0,16009657,65300654,111.692,4195.593,4307
+phi_mo4,mo4_c0.01_w2_x40_Rw25,0.01,2,Wet,40,25,"multi(R{"safety_violations"}min=? [C<=140], R{"water_usage"}<=25 [C<=140])",0,16067728,65540585,113.329,4224.900,4339
+phi_mo4,mo4_c0.025_w0_x40_Rw25,0.025,0,Dry,40,25,"multi(R{"safety_violations"}min=? [C<=140], R{"water_usage"}<=25 [C<=140])",0.53391517,15997570,65248372,111.007,6253.262,6365
+phi_mo4,mo4_c0.025_w1_x40_Rw25,0.025,1,Moderate,40,25,"multi(R{"safety_violations"}min=? [C<=140], R{"water_usage"}<=25 [C<=140])",0,15968588,65127496,110.748,4172.479,4283
+phi_mo4,mo4_c0.025_w2_x40_Rw25,0.025,2,Wet,40,25,"multi(R{"safety_violations"}min=? [C<=140], R{"water_usage"}<=25 [C<=140])",0,16031296,65382856,110.955,4202.133,4314
+phi_mo4,mo4_c0.05_w0_x40_Rw25,0.05,0,Dry,40,25,"multi(R{"safety_violations"}min=? [C<=140], R{"water_usage"}<=25 [C<=140])",4.877607033,16006509,65283313,111.116,6545.014,6657
+phi_mo4,mo4_c0.05_w1_x40_Rw25,0.05,1,Moderate,40,25,"multi(R{"safety_violations"}min=? [C<=140], R{"water_usage"}<=25 [C<=140])",2.547624769,15979049,65167957,110.579,6290.468,6401
+phi_mo4,mo4_c0.05_w2_x40_Rw25,0.05,2,Wet,40,25,"multi(R{"safety_violations"}min=? [C<=140], R{"water_usage"}<=25 [C<=140])",0.4153059494,16042065,65420548,112.231,6571.470,6684

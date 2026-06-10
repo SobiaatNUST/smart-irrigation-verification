@@ -1,0 +1,38 @@
+cff-version: 1.2.0
+message: "If you use this artefact, please cite the paper below."
+title: "SIS — Formal verification of smart irrigation systems (reproducibility artefact)"
+type: software
+authors:
+  - family-names: Ashraf
+    given-names: Sobia
+    affiliation: "School of Electrical Engineering and Computer Science (SEECS), National University of Sciences and Technology (NUST), Islamabad, Pakistan"
+  - family-names: Hasan
+    given-names: Osman
+    affiliation: "School of Electrical Engineering and Computer Science (SEECS), National University of Sciences and Technology (NUST), Islamabad, Pakistan"
+  - family-names: Abed
+    given-names: "Sa'ed"
+    orcid: "https://orcid.org/0000-0003-1849-9316"
+    affiliation: "Computer Engineering Department, College of Engineering and Petroleum, Kuwait University, Kuwait"
+license: MIT
+repository-code: "https://github.com/SobiaatNUST/smart-irrigation-verification"
+keywords:
+  - smart irrigation
+  - probabilistic model checking
+  - Markov decision process
+  - PRISM
+  - Storm
+  - PCTL
+  - policy synthesis
+preferred-citation:
+  type: article
+  title: "A formal verification framework for smart irrigation systems under weather uncertainty using probabilistic model checking"
+  authors:
+    - family-names: Ashraf
+      given-names: Sobia
+    - family-names: Hasan
+      given-names: Osman
+    - family-names: Abed
+      given-names: "Sa'ed"
+  journal: "Smart Agricultural Technology"
+  year: 2026
+  notes: "Under review."

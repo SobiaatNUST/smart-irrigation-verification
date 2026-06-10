@@ -1,0 +1,38 @@
+// ========================================================================
+// PCTL Properties for M2 Threshold-Based Heuristic Controller V3
+// ========================================================================
+// Total transitions per simulation: 5 phases x 28 time steps = 140
+// All reward/probability queries use bound 140 to cover full horizon.
+// ========================================================================
+
+// --- REWARD QUERIES ---
+
+// Q1-Q2: Total irrigation water applied over 7-day horizon
+R{"water_usage"}min=? [ C<=140 ]
+R{"water_usage"}max=? [ C<=140 ]
+
+// Q3-Q4: Number of time steps where soil moisture fell below xmin=30mm
+R{"safety_violations"}min=? [ C<=140 ]
+R{"safety_violations"}max=? [ C<=140 ]
+
+// Q5-Q6: Cumulative magnitude of moisture shortfall (mm below xmin)
+R{"moisture_deficit"}min=? [ C<=140 ]
+R{"moisture_deficit"}max=? [ C<=140 ]
+
+// Q7-Q8: Water lost to runoff and deep percolation (c*x per step)
+R{"water_loss"}min=? [ C<=140 ]
+R{"water_loss"}max=? [ C<=140 ]
+
+// Q9-Q10: Heavy penalty per violation (100 per violation step)
+R{"violation_penalty"}min=? [ C<=140 ]
+R{"violation_penalty"}max=? [ C<=140 ]
+
+// --- PROBABILISTIC QUERIES ---
+
+// Q11-Q12: Probability of EVER entering critical state (x < xmin)
+Pmax=? [ F<=140 "critical" ]
+Pmin=? [ F<=140 "critical" ]
+
+// Q13-Q14: Probability of maintaining safety THROUGHOUT the horizon
+Pmax=? [ G<=140 "safe" ]
+Pmin=? [ G<=140 "safe" ]

@@ -1,0 +1,17 @@
+// ============================================================
+// phi_mo3: violations minimisation under water budget
+// ============================================================
+// Paper notation (eq. 16):
+//   multi( R{"safety_violations"}min=? [C<=140],
+//          R{"water_usage"}<=B [C<=140] )
+//
+// Returns the deterministic policy that minimises the expected
+// count of unsafe ticks (R^v) over the 140-step horizon under a
+// weekly water cap B (mm/7-day).
+//
+// Reference reported budget grid: B in {20, 25, 30}, evaluated
+// across the full 3x3 soil x weather grid at x(0)=40 mm.
+// ============================================================
+
+multi( R{"safety_violations"}min=? [C<=140],
+       R{"water_usage"}<=25 [C<=140] )

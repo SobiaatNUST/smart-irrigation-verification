@@ -1,0 +1,14 @@
+// ============================================================
+// phi_mo2: safety maximisation under water budget
+// ============================================================
+// Paper notation (eq. 15):
+//   multi( Pmax=? [G<=140 "safe"],
+//          R{"water_usage"}<=B [C<=140] )
+//
+// Returns sigma*_{<=B} : the maximum-safety deterministic policy
+// under a weekly water cap B (mm/7-day).
+// Reference reported budget grid: B in {20, 30, 40, 50, 60}.
+// ============================================================
+
+multi( Pmax=? [G<=140 "safe"],
+       R{"water_usage"}<=40 [C<=140] )
