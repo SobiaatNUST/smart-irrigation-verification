@@ -5,7 +5,6 @@ Reproducibility artefact for the paper
 > **A formal verification framework for smart irrigation systems under
 > weather uncertainty using probabilistic model checking**
 > Sobia Ashraf, Osman Hasan, Sa'ed Abed.
-> Submitted to *Smart Agricultural Technology*.
 
 This repository contains the PRISM/Storm models, property files,
 experiment driver scripts, raw and parsed results, and analysis
