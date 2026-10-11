@@ -1,0 +1,1 @@
+multi(R{"water_usage"}min=? [ C<=140 ], P>=1 [ G "safe" ])
